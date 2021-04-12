@@ -1,3 +1,3 @@
 export const b = () => {
-    return 'b'
+    return 'b2'
 }
