@@ -2,29 +2,68 @@
   "name": "rc-ui",
   "version": "1.0.0",
   "description": "ui学习模板，可根据具体业务下载修改",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack --config ./build/webpack.dev.js",
+    "eslint": "eslint . --ext .tsx,.ts,.js",
+    "eslint:fix": "eslint . --ext .tsx,.ts,.js --fix",
+    "stylelint": "stylelint **/*.less,**/*.css",
+    "stylelint:fix": "stylelint '**/*.{less,css}' --fix",
+    "prettier": "npx prettier --write ./",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{tsx,ts,js,jsx}": [
+      "npm run eslint"
+    ],
+    "**/*.{less,css}": [
+      "npm run stylelint"
+    ],
+    "**/components/*": [
+      "npm run prettier"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/markgong-gd/rc-ui.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react",
+    "react-hooks",
+    "rc-ui"
+  ],
+  "author": "markgong",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/markgong-gd/rc-ui/issues"
   },
   "homepage": "https://github.com/markgong-gd/rc-ui#readme",
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@types/node": "^14.14.37",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.1",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "file-loader": "^6.2.0",
+    "husky": "^4.3.8",
     "less-loader": "^8.1.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
     "style-loader": "^2.0.0",
     "ts-loader": "^8.1.0",
     "typescript": "^4.2.4",

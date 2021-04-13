@@ -1,3 +1,1 @@
-export const b = () => {
-    return 'b2'
-}
+export default (): string => 'b2';
