@@ -46,16 +46,21 @@ module.exports = {
   rules: {
     'import/no-unresolved': OFF,
     'linebreak-style': WARN,
+    'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.ts'] }],
+    'no-use-before-define': OFF,
+    'import/extensions': OFF,
+    'react/prop-types': OFF,
+    'react/jsx-props-no-spreading': OFF,
     // '@typescript-eslint/no-unused-vars': 'off',
-    'import/extensions': [
-      ERROR,
-      'ignorePackages',
-      {
-        ts: 'never',
-        tsx: 'never',
-        json: 'never',
-        js: 'never',
-      },
-    ],
+    // 'import/extensions': [
+    //   ERROR,
+    //   'ignorePackages',
+    //   {
+    //     ts: 'never',
+    //     tsx: 'never',
+    //     json: 'never',
+    //     js: 'never',
+    //   },
+    // ],
   },
 };
