@@ -23,9 +23,6 @@
     "**/*.{tsx,ts,js,jsx}": [
       "npm run eslint"
     ],
-    "**/*.{less,css}": [
-      "npm run stylelint"
-    ],
     "**/components/*": [
       "npm run prettier"
     ]
