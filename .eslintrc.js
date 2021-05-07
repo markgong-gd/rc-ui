@@ -4,7 +4,11 @@ const ERROR = 2;
 
 module.exports = {
   parser: '@typescript-eslint/parser',
-  //   ignorePatterns: ['*.config.js'],
+  ignorePatterns: [
+    // '*.config.js'
+    '.docz/**',
+    'doc-site/**',
+  ],
   plugins: ['@typescript-eslint'],
   extends: [
     'airbnb',
