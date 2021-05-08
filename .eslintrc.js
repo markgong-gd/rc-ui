@@ -55,6 +55,10 @@ module.exports = {
     'import/extensions': OFF,
     'react/prop-types': OFF,
     'react/jsx-props-no-spreading': OFF,
+    '@typescript-eslint/no-var-requires': OFF,
+    '@typescript-eslint/ban-ts-comment': OFF,
+    '@typescript-eslint/no-empty-function': OFF,
+    '@typescript-eslint/triple-slash-reference': OFF,
     // '@typescript-eslint/no-unused-vars': 'off',
     // 'import/extensions': [
     //   ERROR,

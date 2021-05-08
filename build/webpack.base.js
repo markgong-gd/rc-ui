@@ -63,6 +63,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
     alias: {
       '@components': path.resolve(__dirname, `${constant.rootPath}/components/`),
+      '@doc-components': path.resolve(__dirname, `${constant.rootPath}/doc-components/`),
     },
   },
 };
