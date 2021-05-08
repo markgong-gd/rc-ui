@@ -30,6 +30,10 @@
       "npm run prettier"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/rc-ui/rc-ui.git"
+  },
   "keywords": [
     "react",
     "react-hooks",
@@ -38,9 +42,9 @@
   "author": "markgong",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/markgong-gd/rc-ui/issues"
+    "url": "https://gitee.com/rc-ui/rc-ui/issues"
   },
-  "homepage": "https://github.com/markgong-gd/rc-ui#readme",
+  "homepage": "https://gitee.com/rc-ui/rc-ui/blob/main/README.md",
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
