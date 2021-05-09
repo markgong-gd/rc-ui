@@ -8,8 +8,8 @@
     "dev": "webpack --config ./build/webpack.dev.js",
     "eslint": "eslint . --ext .tsx,.ts,.js",
     "eslint:fix": "eslint . --ext .tsx,.ts,.js --fix",
-    "stylelint": "stylelint **/*.less,**/*.css",
-    "stylelint:fix": "stylelint '**/*.{less,css}' --fix",
+    "stylelint": "stylelint \"**/*.{less,css}\"",
+    "stylelint:fix": "stylelint \"**/*.{less,css}\" --fix",
     "prettier": "npx prettier --write ./",
     "docz:dev": "docz dev",
     "preview:doc": "docz build && docz serve",
@@ -25,6 +25,9 @@
   "lint-staged": {
     "**/*.{tsx,ts,js,jsx}": [
       "npm run eslint"
+    ],
+    "**/*.{less,css}": [
+      "npm run stylelint"
     ],
     "**/components/*": [
       "npm run prettier"
@@ -74,6 +77,11 @@
     "raw-loader": "^4.0.2",
     "rimraf": "^3.0.2",
     "style-loader": "^2.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recess-order": "^2.4.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
     "ts-loader": "^8.1.0",
     "typescript": "^4.2.4",
     "url-loader": "^4.1.1",

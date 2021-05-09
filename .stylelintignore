@@ -1,0 +1,14 @@
+*.png
+*.eot
+*.ttf
+*.woff
+
+*.tsx
+*.ts
+*.js
+*.jsx
+
+dist/
+node_modules
+typings
+doc-site
