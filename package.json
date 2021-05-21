@@ -2,7 +2,7 @@
   "name": "rc-ui",
   "version": "1.0.0",
   "description": "ui学习模板，可根据具体业务下载修改",
-  "main": "index.ts",
+  "main": "lib/index.ts",
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack --config ./build/webpack.dev.js",
@@ -45,6 +45,7 @@
     "url": "https://gitee.com/rc-ui/rc-ui/issues"
   },
   "homepage": "https://gitee.com/rc-ui/rc-ui/blob/main/README.md",
+  "types": "lib/index.d.ts",
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
