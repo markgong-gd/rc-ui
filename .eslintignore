@@ -4,3 +4,4 @@ docs
 # webpack build dist ignore
 dist/
 build/
+lib/

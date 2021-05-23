@@ -19,3 +19,4 @@ gatsby-node.js
 tsconfig.json
 tsconfig.build.json
 yarn.lock
+components
